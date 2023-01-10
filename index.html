@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button value="off" id="dark-mode" onclick="darkMode()"> dark mode</button>
+        <button  id="resetbtn" class="no-task" onclick="resetList()">reset your list</button>
+    </header>
+    <div class="conteiner">
+        <h1>TO DO LIST</h1>
+        <form id="main-form" class="form" onsubmit="">
+            <div class="up">
+                <input type="text" id="user-input" placeholder="Enter your task"><br>
+                <button id="task-btn" type="submit" onsubmit="resetColor(tasks)">add task</button>
+            </div>
+            <div class="missions">
+                <ul id="task-list">
+                </ul>
+            </div>
+          </form>
+    </div>
+    
+    <script src="/ToDoList/main.js"></script>
+</body>
+</html>
